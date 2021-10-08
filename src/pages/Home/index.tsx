@@ -1,10 +1,11 @@
 
+import { Tire } from '../../components/Tire';
+import { TireInfo } from '../../components/TireInfo';
+
 import {
     Container,
-    Header,
-    Title,
-    Credits,
-    Content,
+    Tires,
+    TireContent,
     Chassi
 } from './styles';
 
@@ -14,14 +15,27 @@ export const Home = () => {
 
     return (
         <Container>
-            <Header>
-                <Title>Project Apollo</Title>
-                <Credits>Created by Victor Codonho @ 2021</Credits>
-            </Header>
-
-            <Content>
-                <Chassi src={ChassiImg} width="100" />
-            </Content>
+            <Tires>
+                <TireContent style={{ marginTop: -55, flexDirection: 'row-reverse' }}>
+                    <Tire activated={false} />
+                    <TireInfo />
+                </TireContent>
+                <TireContent style={{ marginBottom: -55, flexDirection: 'row-reverse' }}>
+                    <Tire activated={true} />
+                    <TireInfo />
+                </TireContent>
+            </Tires>
+            <Chassi src={ChassiImg} width="130" />
+            <Tires>
+                <TireContent style={{ marginTop: -55 }}>
+                    <Tire activated={true} />
+                    <TireInfo />
+                </TireContent>
+                <TireContent style={{ marginBottom: -55 }}>
+                    <Tire activated={false} />
+                    <TireInfo />
+                </TireContent>
+            </Tires>
         </Container>
     );
 }
