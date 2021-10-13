@@ -23,3 +23,11 @@ export const TireContent = styled.div`
     justify-content: center;
     align-items: center;
 `;
+
+export const CardTires = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    margin-top: 86px;
+`;

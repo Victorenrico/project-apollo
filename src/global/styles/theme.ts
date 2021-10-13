@@ -17,5 +17,6 @@ export const colors = {
     secondary: '#03B57F',
     background: '#EDEDED',
     gray_light: '#D9DCE0',
-    white: '#FFFFFF'
+    white: '#FFFFFF',
+    black: 'rgba(0, 0, 0, 0.5)'
 }
